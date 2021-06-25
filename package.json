@@ -1,0 +1,36 @@
+{
+  "name": "source",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.6",
+    "array-query": "^0.1.2",
+    "body-parser": "^1.19.0",
+    "botbuilder": "^3.13.1",
+    "date-diff": "^0.2.2",
+    "datetime-difference": "^1.0.2",
+    "fs-extra": "^9.0.1",
+    "meteor-node-stubs": "^1.0.0",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "node-html-to-image": "^2.1.1",
+    "nodemailer": "^6.4.17",
+    "podio-js": "^1.6.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.12.0",
+    "striptags": "^3.1.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
